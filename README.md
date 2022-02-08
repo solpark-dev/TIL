@@ -9,6 +9,7 @@ Hello!
 * Java
 * Data
 
-## 02082022
-* class
+## 02072022
+* List
 * function
+* Class
