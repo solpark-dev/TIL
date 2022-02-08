@@ -5,8 +5,6 @@
 ### Pythons
 Hello!
 
-*Python
-
-*Java
-
-*Data
+* Python
+* Java
+* Data
