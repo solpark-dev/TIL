@@ -25,6 +25,7 @@
 
 HelloServlet
 ojdbc14.jar lib에 등록
+C:\work\class730\Day27\jw04\part01\login(SQL).txt db 생성
 
 ### 3. 예제 코드
 ```java
