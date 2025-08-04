@@ -22,7 +22,7 @@ Controller(Servlet)는 MVC 패턴의 중재자로서 다음 네 가지 핵심 �
 
 1.  **클라이언트 요청 판정 및 분석**: 사용자의 요청(URI, 파라미터)을 파악.
 2.  **비즈니스 로직(B/L) 수행 요청**: 요청에 맞는 Model(Service 객체 등)을 호출.
-3.  [cite_start]**모델(Model)과 뷰(View) 연결**: Model의 처리 결과를 `request` 등의 Scope에 저장하여 View에 전달. [cite: 8, 9, 12]
+3.  **모델(Model)과 뷰(View) 연결**: Model의 처리 결과를 `request` 등의 Scope에 저장하여 View에 전달.
 4.  **네비게이션 / 뷰 선택**: 사용자에게 보여줄 View(JSP)로 `forward` 또는 `redirect`.
 
 ## 3. JSP 내장 객체와 Scope의 이해 (Today's Focus)
