@@ -4,7 +4,7 @@
 
 ---
 
-## ## 오늘의 학습 여정 (Learning Journey)  Journey
+## ## 오늘의 학습 여정 (Learning Journey)
 
 오늘의 학습은 **강한 결합(Tight Coupling)** 상태의 코드에서 출발하여, **느슨한 결합(Loose Coupling)** 구조로 리팩토링하고, 최종적으로 이 과정을 **스프링 프레임워크**에 위임하는 전체적인 흐름을 경험하는 과정이었다.
 
@@ -43,12 +43,12 @@
 **Wiring**(와이어링)이란 IoC 컨테이너가 Bean들 사이의 의존 관계를 설정(연결)해주는 과정을 의미한다. 스프링에서는 주로 두 가지 주입 방식을 사용한다.
 
 ### ### 1. Setter Injection (세터 주입)
-기본 생성자로 Bean 객체를 생성한 후, **setter 메서드**를 호출하여 의존성을 주입하는 방식이다. 선택적인 의존성을 주입하거나, 나중에 의존성을 변경해야 할 때 유용하다.
+기본 생성자로 Bean 객체를 생성한 후, **setter 메서드**를 호출하여 의존성을 주입하는 방식이다. 객체의 속성 값을 주입하거나 선택적인 의존성을 주입할 때 유용하다.
 
 * **XML 설정:** `<property>` 태그 사용
     ```xml
-    <bean id="player" class="com.example.Player">
-        <property name="dice" ref="myDice"/>
+    <bean id="user" class="com.example.User">
+        <property name="userId" value="user01"/>
     </bean>
     ```
 
@@ -73,5 +73,6 @@
 * **`class`**: Bean을 생성할 클래스의 **패키지 경로를 포함한 전체 이름**(FQCN).
 * **`<property name="...">`**: Setter Injection 시 호출할 **setter 메서드의 이름**을 지정한다. `setDice()` 메서드라면 `name="dice"`로 기술한다.
 * **`ref`**: 주입할 의존 객체의 **`id`를 참조**할 때 사용한다. `ref="myDice"`는 `id`가 `myDice`인 Bean을 주입하라는 의미다.
+* **`value`**: 문자열, 숫자 등 **기본 데이터 타입의 값**을 직접 주입할 때 사용한다.
 
 ```markdown
